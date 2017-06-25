@@ -1,0 +1,2 @@
+.title-1{transform:translateY(-200%);opacity:0;position:relative;border-radius:10px;transition:opasity 2s ease, transform 2s ease}.title-1.show{transform:translateY(0);opacity:1}
+/*# sourceMappingURL=_animate.min.css.map */

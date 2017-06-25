@@ -1,0 +1,36 @@
+@mixin transition($prop, $time, $funct) {
+  transition: $prop $time $funct;
+  -webkit-transition: $prop $time $funct;
+  -moz-transition: $prop $time $funct;
+  -o-transition: $prop $time $funct;
+  -ms-transition: $prop $time $funct;
+}
+
+@mixin box-sizing {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+}
+
+@mixin btn-hover($color-bg, $color-text) {
+  @include transition(all, 0.5s, ease);
+  &:hover, &:focus{
+    background: rgba($color-bg, 1);
+    color: $color-text;
+  }
+
+  &:active{
+    background: rgba($color-text, 1);
+  }
+}
+
+@mixin a-hover() {
+  @include transition(all, 0.5s, ease);
+  &:hover, &:active, &:focus{
+   text-decoration: underline;
+   opacity: 0.7;
+  }
+}
+
